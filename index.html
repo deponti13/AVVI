@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVVI</title>
+   <link rel="shortcut icon" href="/favicon_io-5/favicon-32x32.png" type="image/x-icon">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+
+    
+   
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+        /* Estilos gerais */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e1dfdf9d;
+            height: 2000px; /* Para ter espaço suficiente para rolar a página */
+            
+        }
+
+        /* Posiciona a logo no canto superior esquerdo */
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .logo img {
+            height: 100px;
+            width: 100px;
+        }
+
+        /* Centraliza a barra de pesquisa no topo e adiciona os botões na mesma linha */
+        .search-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px; /* Espaçamento do topo da página */
+            background-color: #8080802c;
+            padding: 20px;
+        }
+
+        /* Estilos para a barra de pesquisa */
+        .search-bar input[type="text"] {
+            width: 400px;
+            height: 20px;
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .search-bar input[type="submit"] {
+            height: 40px;
+            padding: 10px;
+            border-radius: 20px;
+            border: none;
+            background-color: #000000;
+            color: white;
+            cursor: pointer;
+            margin-left: 10px; /* Espaço entre campo de busca e botão */
+        }
+
+        /* Estilos para os botões "Saiba Mais" e "Menu" */
+        .buttons {
+            display: flex;
+            margin-top: 20px;
+            align-items: center;
+            margin-left: 20px; /* Espaço entre a barra de pesquisa e os botões */
+        }
+
+        .buttons a {
+            text-decoration: none;
+            padding: 10px 20px;
+            margin-left: 190px; /* Espaçamento entre os botões */
+            border-radius: 20px;
+            background-color: #000000;
+            color: white;
+            font-size: 16px;
+        }
+
+        .buttons a.menu {
+            background-color: #000000; /* Cor diferente para o botão Menu */
+        }
+
+        /* Navegação com flexbox para posicionar o texto e a imagem lado a lado */
+        .navegacao {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 100px 50px;
+        }
+
+        .navegacao h1 {
+            font-family: "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap";
+            font-size: 60px;
+            margin-left: 40px;
+            margin-top: -450px;
+            position: relative;
+            
+            
+        }
+
+        .navegacao h2 {
+            margin-left: 40px;
+            font-family: "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap";
+        }
+
+        .navegacao .texto {
+            max-width: 50%;
+        }
+
+        .navegacao img {
+            height: 800px;
+            width: 900px;
+            margin-right: 50px;
+            object-fit: cover;
+        }
+
+        .foto1 img{
+            height: 500px;
+            width: 400px;
+            margin-top: -420px;
+        }
+
+      
+
+       
+
+        
+
+        .texto3 h1{
+          text-align: center;
+          margin-top: -240px;
+          color: white;
+          font-family: "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"; 
+          
+        }
+
+        .texto3 img {
+          height: 400px;
+          width: 400px;
+          border-radius: 50%; /* Deixa a imagem redonda */
+          object-fit: cover;
+          margin-right: 40px; /* Espaço entre a imagem e o parágrafo */
+        }
+
+        .texto3{
+            background-color: black;
+            margin-bottom: 1000px;
+            display: flex; /* Define o flexbox */
+            align-items: center; /* Alinha os itens verticalmente */
+            justify-content: center; /* Centraliza o conteúdo horizontalmente */
+            padding: 50px; /* Espaçamento interno para melhorar a aparência */
+            margin-top: 80px;
+          
+            
+        }
+
+        .texto3 p {
+            color: white;
+            text-align: left;
+            max-width: 500px; /* Limita a largura do parágrafo */
+            margin: 0; /* Remove a margem padrão */
+           
+        }
+
+        .oque h1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 2px;
+            justify-content: space-between;
+            flex-direction: column;
+            margin-bottom: 100px;
+            font-size: 50px;
+            font-family: "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap";
+        }
+
+        .section-imagens {
+            display: flex;
+            justify-content: space-around; /* Espaça as imagens igualmente */
+            align-items: center;
+            margin: 50px 0; /* Espaçamento em cima e embaixo da section */
+            margin-top: -900px;
+        }
+
+        
+
+        .fornecimento {
+            padding: 20px;
+            margin-top: -800px;
+            text-align: center;
+            background-color: #e8e7e79d;
+}
+
+.fornecimento h1 {
+   font-size: 60px;
+   text-align: center;
+   margin-bottom: 5px; /* Reduz o espaço abaixo do h1 */
+   font-family: "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap";
+   margin-top: -40px;
+}
+
+.fornecimento h2 {
+   font-size: 40px; /* Reduz o tamanho do h2 para diferenciar do h1 */
+   width: 38%;
+   margin: 0 auto; /* Centraliza o bloco */
+   text-align: left;
+   margin-top: 0; /* Remove o espaço entre h1 e h2 */
+   padding-top: 5px; /* Pequeno ajuste de espaçamento superior */
+   font-family: "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap";
+   
+}
+
+.destaque {
+   color: #F20F38;
+}
+
+
+.imginicio{
+    background-color: #8080802c;
+    padding: 80px;
+    color: #000000 ; 
+    font-size: 130px;
+    text-align: center;
+    font-family: "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap";
+
+}
+
+.imginicio h1{ 
+  text-shadow: 5px  rgb(0, 0, 0);
+}
+
+
+.contato{
+    background-color: #e8e7e79d;
+    padding: 300px;
+}
+
+ .contato{
+    background-color: #000000;
+    padding: 200px;
+ }
+
+ .container {
+  background-color: #1c1c1c; /* Cor de fundo preto para o formulário */
+  padding: 20px;
+  border-radius: 20px; /* Bordas mais arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombras mais suaves */
+  width: 450px; /* Largura menor */
+  margin-right: 120px; /* Espaço à direita para afastar do limite da página */
+}
+
+.container h2 {
+  text-align: center;
+  color: #f5f5f5; /* Cor do texto branca */
+  font-size: 50px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  
+}
+
+label {
+  margin-left: 10px;
+  margin-top: 10px;
+  display: block;
+  color: #ccc; /* Cor do texto dos labels */
+}
+
+input {
+  width: 90%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: #333; /* Cor de fundo dos inputs */
+  color: #fff; /* Cor do texto dos inputs */
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #F20F38;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Para responsividade */
+@media (max-width: 768px) {
+  .form-container {
+    width: 90%;
+    margin-right: 0;
+  }
+}
+
+.contato video{
+    margin-left: 550px;
+    width: 700px;
+    height: 600px;
+    margin-top: -850px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /*  colunas */
+  gap: 20px; /* Espaço entre as imagens */
+  padding: 20px;
+}
+
+.gallery-item {
+  overflow: hidden; /* Garante que as imagens não saiam dos limites */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  
+}
+
+.gallery-item img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Efeito de hover */
+.gallery-item:hover img {
+  transform: scale(1.2); /* Aumenta a imagem em 20% */
+}
+
+.transition{
+    
+   
+    top: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    height: 600px;
+    
+}
+
+.transition .slide .item{
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    border-radius: 20px;
+    box-shadow: 0, 30px 50px white;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: inline-block;
+    transition: 0,5s;
+}
+
+.portfolio h1{
+    text-align: center;
+    padding: 100px;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.video2 video{
+  height: 100%;
+  width: 100%;
+}
+
+.video2 h1{
+  text-align: center;
+  font-size: 45px;
+  padding: 80px;
+}
+
+footer h1{
+  font-size: 16px;
+  padding-top: 70px;
+  text-align: center;
+}
+
+.h2{
+  font-size: 30px;
+  text-align: center;
+  padding: 55px;
+  font-family: "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap";
+}
+
+
+
+.apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: #f4f4f4;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.foto {
+    flex: 1; /* Permite que a imagem ocupe uma parte do espaço */
+    padding: 20px;
+}
+
+.foto img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.texto {
+    flex: 1; /* Permite que o texto ocupe uma parte do espaço */
+    padding: 20px;
+}
+
+.texto h2 {
+    font-family: 'Playfair Display', serif;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.texto p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.apresentacao{
+  background-color: #e8e7e79d;
+}
+
+
+
+
+
+
+
+
+        
+
+
+
+
+       
+
+      
+
+        
+    </style>
+</head>
+<body>
+
+
+    <!-- Logo no canto superior esquerdo -->
+    <div class="logo">
+        <img src="/img/Captura_de_Tela_2024-09-23_às_19.25.08-removebg-preview.png" alt="Logo">
+    </div>
+
+
+    <section class="video2">
+    <video autoplay loop muted>
+      <source src="/video/O METODO PERFEITO PARA ALAVANCAR A SUAS REDES SOCIAIS..mp4" type="video/mp4" >
+      Seu navegador não suporta a tag de vídeo.
+    </video>
+    </section>
+
+
+   <img src="/img/black_white_Thunder_logo-2-removebg-preview.png" alt="">
+
+    <!-- Conteúdo da navegação com texto e imagem lado a lado -->
+    <div class="navegacao" data-aos="fade-up">
+        <div class="texto">
+            <h1>AVVI <br> UM JEITO NOVO DE <span class="destaque">ENGAJAR</span></h1>
+            <h2>AGENCIA DE MARKETING DIGITAL</h2>
+        </div>
+    </div>
+
+
+    <section class="oque" data-aos="fade-up">
+        <h1>O QUE É A AVVI</h1>
+    </section>
+
+    
+
+    <div class="texto3" data-aos="fade-up">
+        
+
+        <img src="/img/AVVI.png" alt="" data-aos="fade-up">
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione,
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem culpa,
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, deleniti blanditiis 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam veniam ipsa excepturi reprehenderit ex eum dolorum quia quasi error 
+            sint! Earum vel saepe nobis hic fugit repellendus quaerat reiciendis sunt.exercitationem tenetur 
+            iusto quis necessitatibus molestias impedit asperiores explicabo culpa harum recusandae. Corrupti 
+            deleniti porro corporis alias expedita dignissimos? soluta facere itaque quibusdam quis quam beatae iste,
+             placeat explicabo perspiciatis. Perspiciatis minus explicabo qui id iste voluptatem vitae illo. modi possimus
+              facilis facere reprehenderit sunt distinctio tempora! Temporibus sit magni laboriosam consequuntur iusto quia 
+              necessitatibus quibusdam assumenda, facilis corporis animi. Illo itaque laboriosam quisquam explicabo distinctio
+               molestiae error porro nesciunt quaerat corrupti earum eveniet fugiat voluptates recusandae expedita reprehenderit, 
+               et delectus obcaecati?</p>
+
+        
+    
+    </div>
+
+    <section class="fornecimento" data-aos="fade-up">
+
+        <h1>NÓS PRODUZIMOS</h1>
+
+        <h2><span class="destaque">IDÉIA</span> DIVERTIDA</h2>
+        <h2><span class="destaque">IDÉIA</span> DINAMICA</h2>
+        <h2><span class="destaque">IDÉIA</span> QUE INÓVA</h2>
+    </section>
+
+    <div class="contato">
+
+        <div class="container" data-aos="fade-up">
+
+            <h2>Formulário de Contato</h2>
+    <form action="#" method="post" data-aos="fade-up">
+      <label for="first-name">Nome:</label>
+      <input type="text" id="first-name" name="first-name" placeholder="Digite seu nome" required>
+
+      <label for="last-name">Sobrenome:</label>
+      <input type="text" id="last-name" name="last-name" placeholder="Digite seu sobrenome" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+
+      <label for="phone">Número de Telefone:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Digite seu telefone" required>
+
+      <label for="company">Nome da Empresa:</label>
+      <input type="text" id="company" name="company" placeholder="Digite o nome da empresa">
+
+      <button type="submit">Enviar</button>
+    </form>
+
+        </div>
+
+        <video autoplay loop muted data-aos="fade-up">
+            <source src="/video/video2.mp4" type="video/mp4" >
+            Seu navegador não suporta a tag de vídeo.
+          </video>
+    
+    </div>
+
+<section class="portfolio" data-aos="fade-up">
+       
+    <h1>PORTFOLIO</h1>
+
+
+
+        <div class="gallery" data-aos="fade-up">
+            <div class="gallery-item">
+              <img src="/img/foto6.jpg" alt="Imagem 1">
+            </div>
+            <div class="gallery-item">
+              <img src="/img/foto7.jpg" alt="Imagem 2">
+            </div>
+            <div class="gallery-item">
+              <img src="/img/foto8.jpg" alt="Imagem 3">
+            </div>
+            <div class="gallery-item">
+              <img src="/img/foto9.jpg" alt="Imagem 4">
+            </div>
+        
+                <div class="gallery-item">
+                  <img src="/img/foto10.jpg" alt="Imagem 1">
+                </div>
+                <div class="gallery-item">
+                  <img src="/img/foto3.jpg" alt="Imagem 2">
+                </div>
+                <div class="gallery-item">
+                  <img src="/img/foto4.jpg" alt="Imagem 3">
+                </div>
+                <div class="gallery-item">
+                  <img src="/img/foto5.jpg" alt="Imagem 4">
+                </div>
+              </div>
+
+            
+          </div>
+
+        <div class="gallery">
+          <div class="gallery-item">
+            <img src="/img/foto11.jpg" alt="Imagem 1">
+          </div>
+          <div class="gallery-item">
+            <img src="/img/foto12.jpg" alt="Imagem 2">
+          </div>
+          <div class="gallery-item">
+            <img src="/img/foto13.jpg" alt="Imagem 3">
+          </div>
+          <div class="gallery-item">
+            <img src="/img/foto14.jpg" alt="Imagem 4">
+          </div>
+        </div>
+
+    </section>
+
+    <section class="h2">
+
+      <h2>QUEM ESTA POR TRÁS</h2>
+
+    </section>
+    
+
+    <section class="apresentacao">
+      <div class="container">
+          <div class="foto">
+              <img src="/img/Captura de Tela 2024-02-27 às 21.05.39.png" alt="Apresentação">
+          </div>
+          <div class="texto">
+              <h2>Bem-vindo à AVVI!</h2>
+              <p>
+                  Meu nome é Ahmad Deponti, tenho 24 anos nasci e cresci na cidade de São Carlos onde com o tempo fui criando laços por essa cidade que tanto amo, 
+              </p>
+              <p>
+                  Junte-se a nós e descubra como podemos elevar sua presença digital!
+              </p>
+          </div>
+      </div>
+  </section>
+
+    
+
+
+   
+
+
+ 
+
+  
+    <footer>
+      <h1>2024| AVVI by Ahmad Deponti</h1>
+    </footer>
+ 
+
+
+
+
+    <script>
+
+        AOS.init();
+
+    </script>
+
+    
+
+    
+
+
+
+  
+</body>
+
+<!-- Fontes externas -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</html>
