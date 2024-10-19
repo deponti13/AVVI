@@ -17,9 +17,17 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-color: #e1dfdf9d;
-            height: 2000px; /* Para ter espaço suficiente para rolar a página */
+            background-color: #FAF3E0;
+        
+          
             
+        }
+
+     
+
+        *{
+          margin: 0px;
+          padding: 0px;
         }
 
         /* Posiciona a logo no canto superior esquerdo */
@@ -59,7 +67,7 @@
             padding: 10px;
             border-radius: 20px;
             border: none;
-            background-color: #000000;
+            background-color: #FAF3E0;
             color: white;
             cursor: pointer;
             margin-left: 10px; /* Espaço entre campo de busca e botão */
@@ -78,7 +86,7 @@
             padding: 10px 20px;
             margin-left: 190px; /* Espaçamento entre os botões */
             border-radius: 20px;
-            background-color: #000000;
+            background-color: #FAF3E0;
             color: white;
             font-size: 16px;
         }
@@ -136,7 +144,7 @@
         .texto3 h1{
           text-align: center;
           margin-top: -240px;
-          color: white;
+          color: #708090;
           font-family: "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"; 
           
         }
@@ -192,10 +200,10 @@
         
 
         .fornecimento {
-            padding: 20px;
+            padding: 100px;
             margin-top: -800px;
             text-align: center;
-            background-color: #e8e7e79d;
+            background-color: #FAF3E0;
 }
 
 .fornecimento h1 {
@@ -203,8 +211,11 @@
    text-align: center;
    margin-bottom: 5px; /* Reduz o espaço abaixo do h1 */
    font-family: "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap";
-   margin-top: -40px;
+   margin-top: -190px;
+   -webkit-text-stroke: 0.1vw black ;
+   color: #e8e7e79d;
 }
+
 
 .fornecimento h2 {
    font-size: 40px; /* Reduz o tamanho do h2 para diferenciar do h1 */
@@ -238,7 +249,7 @@
 
 
 .contato{
-    background-color: #e8e7e79d;
+    background-color: #FAF3E0;
     padding: 300px;
 }
 
@@ -424,18 +435,74 @@ footer h1{
 
 .texto h2 {
     font-family: 'Playfair Display', serif;
-    color: #333;
+    color: #FAF3E0;
     margin-bottom: 20px;
 }
 
 .texto p {
-    color: #666;
+    color: #FAF3E0;
     line-height: 1.6;
 }
 
 .apresentacao{
-  background-color: #e8e7e79d;
+  background-color: #FAF3E0;
 }
+
+div{
+  cursor: url('./cursor-svgrepo-com-_2_.cur'), auto;
+}
+
+.pagina:nth-child(odd){
+  background: linear-gradient(-229deg, rgb(30, 255, 0),
+  rgb(17, 30, 218));
+}
+
+.pagina:nth-child(even){
+  background: linear-gradient(-229deg, rgb(255, 0, 85),
+  rgb(93, 6, 115));
+}
+
+.galeria{
+  width: 100%;
+  height: 100vh;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FAF3E0;
+
+}
+
+.galeria{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100vw;
+  padding: 20px;
+}
+
+
+
+
+.pagina{
+  width: 100px;
+  height: 500px;
+  margin: 10px;
+  border-radius: 50px;
+  
+}
+
+.pagina img {
+    width: 100%; /* Para a imagem ocupar toda a largura da div */
+    height: 500px; /* Para manter a proporção da imagem */
+    border-radius: 20px; /* Para bordas arredondadas, se desejar */
+}
+
+.pagina:hover{
+  width: 300px;
+}
+
+
+
 
 
 
@@ -495,19 +562,13 @@ footer h1{
 
         <img src="/img/AVVI.png" alt="" data-aos="fade-up">
 
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione,
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem culpa,
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, deleniti blanditiis 
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam veniam ipsa excepturi reprehenderit ex eum dolorum quia quasi error 
-            sint! Earum vel saepe nobis hic fugit repellendus quaerat reiciendis sunt.exercitationem tenetur 
-            iusto quis necessitatibus molestias impedit asperiores explicabo culpa harum recusandae. Corrupti 
-            deleniti porro corporis alias expedita dignissimos? soluta facere itaque quibusdam quis quam beatae iste,
-             placeat explicabo perspiciatis. Perspiciatis minus explicabo qui id iste voluptatem vitae illo. modi possimus
-              facilis facere reprehenderit sunt distinctio tempora! Temporibus sit magni laboriosam consequuntur iusto quia 
-              necessitatibus quibusdam assumenda, facilis corporis animi. Illo itaque laboriosam quisquam explicabo distinctio
-               molestiae error porro nesciunt quaerat corrupti earum eveniet fugiat voluptates recusandae expedita reprehenderit, 
-               et delectus obcaecati?</p>
+        <p>Onde a criatividade encontra a estratégia! Somos uma marca moderna e dinâmica de marketing digital, dedicada a impulsionar o potencial das empresas através de conteúdos inovadores e impactantes.
+
+          Na AVVI, acreditamos que cada marca tem uma história única a contar. Nossa missão é ajudar você a narrar essa história de forma envolvente, atraindo e conectando-se com seu público-alvo. Com uma abordagem inteligente e adaptável, desenvolvemos estratégias personalizadas que não apenas elevam sua presença digital, mas também alavancam seus resultados.
+          
+          Seja através de campanhas de mídias sociais, otimização de SEO ou criação de conteúdo de qualidade, estamos aqui para transformar suas ideias em realidades vibrantes. Junte-se a nós e descubra como a AVVI pode ser a parceira ideal na jornada de crescimento da sua marca!
+          
+          AVVI: Criatividade que transforma.</p>
 
         
     
@@ -515,7 +576,7 @@ footer h1{
 
     <section class="fornecimento" data-aos="fade-up">
 
-        <h1>NÓS PRODUZIMOS</h1>
+        <h1 data-text="NOS PRODUZIMOS">NÓS PRODUZIMOS</h1>
 
         <h2><span class="destaque">IDÉIA</span> DIVERTIDA</h2>
         <h2><span class="destaque">IDÉIA</span> DINAMICA</h2>
@@ -616,24 +677,58 @@ footer h1{
     </section>
     
 
-    <section class="apresentacao">
-      <div class="container">
-          <div class="foto">
-              <img src="/img/Captura de Tela 2024-02-27 às 21.05.39.png" alt="Apresentação">
+    <div class="container-flex">
+      <section class="apresentacao">
+          <div class="container">
+              <div class="foto">
+                  <img src="/img/Captura de Tela 2024-02-27 às 21.05.39.png" alt="Apresentação">
+              </div>
+              <div class="texto">
+                  <h2>Bem-vindo à AVVI!</h2>
+                  <p>Meu nome é Ahmad Deponti, tenho 24 anos nasci e cresci na cidade de São Carlos onde com o tempo fui criando laços por essa cidade que tanto amo,</p>
+                  <p>Junte-se a nós e descubra como podemos elevar sua presença digital!</p>
+              </div>
           </div>
-          <div class="texto">
-              <h2>Bem-vindo à AVVI!</h2>
-              <p>
-                  Meu nome é Ahmad Deponti, tenho 24 anos nasci e cresci na cidade de São Carlos onde com o tempo fui criando laços por essa cidade que tanto amo, 
-              </p>
-              <p>
-                  Junte-se a nós e descubra como podemos elevar sua presença digital!
-              </p>
-          </div>
-      </div>
-  </section>
+      </section>
+  
+      
 
-    
+
+
+
+
+
+
+
+
+
+
+
+  <svg viewbox="0 0 100 20">
+    <defs>
+      <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+        <stop offset="5%" stop-color="##F20F38"/>
+        <stop offset="95%" stop-color="#F20F38"/>
+      </linearGradient>
+      <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
+        <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
+          <animateTransform
+              attributeName="transform"
+              begin="0s"
+              dur="1.5s"
+              type="translate"
+              from="0,0"
+              to="40,0"
+              repeatCount="indefinite" />
+        </path>
+      </pattern>
+    </defs>
+    <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="0.6">JÁ VAI?</text>
+    <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#gradient)" fill-opacity="0.1">JA VAI?</text>
+  </svg>
+
+
+  
 
 
    
